@@ -1,0 +1,38 @@
+
+<!-- date,name,from,amount,tags -->
+
+<div class="container">
+  <h1>Add an Expense</h1>
+  <form action="/budgtr" method="POST">
+    <div class="row">
+      <div class="5 columns">
+      Date: <input  class = "u-half-width" type="text" name="date" placeholder="Date"><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="5 columns">
+      Name: <input type="text" name="name" placeholder="Name"><br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="5 columns">
+      From: <input type="text" name="from" placeholder="From"><br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="5 columns">
+      Amount: <input type="number" name="amount" placeholder="Amount"><br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="5 columns">
+      tags: <input type="text" name="tags" placeholder="Tags"><br>
+    </div>
+  </div>
+      <input type="submit" value="Create Expense">
+    </form>
+  </form>
+  <a href="/budgtr" class="button button-primary">Back</a>
+</div>
+
+

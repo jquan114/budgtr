@@ -1,0 +1,34 @@
+
+<!-- date,name,from,amount,tags Var=== expenses-->
+<%if(balance < 0){%>
+<style>
+  body {
+    background-color: red;
+  }
+</style>
+<%}%> <%if(balance > 1000){%>
+<style>
+  body {
+    background-color: lightcyan;
+  }
+</style>
+<%}%>
+<div class="container">
+  <nav>
+    <a href="/budgtr/new">New Expenses</a>
+  </nav>
+  <h1>Budgtr</h1>
+  <h5>Account Balance: <%=balance%></h5>
+</div>
+<table class="u-full-width">
+  <% for(let i = 0; i < expenses.length; i++) {%> <%const
+  { date,name,from,amount,tags}= expenses[i]%>
+  <tr>
+    <td><%=date%></td>
+    <td><a href="/budgtr/<%=i%>"><%=name%></a></td>
+    <td><%=from%></td>
+    <td><%=amount%></td>
+  </tr>
+  <%}%>
+</table>
+
